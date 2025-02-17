@@ -522,3 +522,11 @@ footer p {
         padding: 3rem 1rem; /* Adjust padding for smaller screens */
     }
 }
+
+.typewriter {
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.15em solid orange;
+    animation: caret 0.75s steps(1) infinite;
+}
