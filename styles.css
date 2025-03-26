@@ -1,8 +1,8 @@
 /* Base Styles */
 :root {
-    --text-color: #1a1c20;
-    --link-color: #ffffff;
-    --background-color: #eeeff1;
+    --text-color: #ffffff;  /* Changed to white for better contrast */
+    --link-color: #A2D2DF;  /* Kept the accent color */
+    --background-color: #111111;  /* Changed to black */
     font-size: 17px; /* Set the base font size */
 }
 
@@ -24,6 +24,8 @@ html {
 
 body {
     font-family: 'font', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 a {
@@ -32,7 +34,7 @@ a {
 }
 
 nav {
-    background-color: #A2D2DF;
+    background-color: #111111;
     display: flex;
     justify-content: space-between;
     padding: 0 3.125rem;
@@ -42,7 +44,6 @@ nav {
     top: 0;
     width: 100%;
     z-index: 1000;
-    background-color: #A2D2DF;
     backdrop-filter: blur(5px);
 }
 
@@ -73,15 +74,15 @@ section {
     text-align: center;
     gap: 2rem;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); */
 }
 
 section:nth-of-type(odd) {
-    background-color: #f8f8f8; /* Light gray for odd sections */
+    background-color: #111111; /* Dark gray for odd sections */
 }
 
 section:nth-of-type(even) {
-    background-color: #ffffff; /* White for even sections */
+    background-color: #111111; /* Black for even sections */
 }
 
 /* Section Heading Styles */
@@ -282,11 +283,12 @@ footer p {
 .project-box {
     flex: 0 0 16rem; /* Fixed width for the boxes */
     text-align: center;
-    border: 1px solid #d7dbd8;
+    border: 1px solid #ffffff;
     border-radius: 0.5rem;
     padding: 1rem;
     margin: 0 0.5rem;
-    background-color: #f9f9f9;
+    background-color: #000000;
+    color: var(--text-color);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scaling */
 }
@@ -318,7 +320,7 @@ footer p {
 .project-box p {
     font-size: 1rem;
     font-weight: 300;
-    color: #494a4a;
+    color: #83cfe3;
 }
 
 /* Skills Section */
@@ -365,7 +367,7 @@ footer p {
     text-align: center;
     gap: 1rem;
     padding: 2rem;
-    background-color: #f8f8f8; /* Light background color */
+    background-color: #111111; /* Light background color */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
     border-radius: 8px; /* Rounded corners */
 }
@@ -397,7 +399,9 @@ footer p {
     width: 100%;
     padding: 0.75rem;
     font-size: 1rem;
-    border: 1px solid #ccc;
+    background-color: #111111;
+    border: 1px solid #333333;
+    color: var(--text-color);
     border-radius: 4px;
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
     resize: vertical; /* Allow vertical resizing for the textarea */
@@ -529,4 +533,8 @@ footer p {
     overflow: hidden;
     border-right: 0.15em solid orange;
     animation: caret 0.75s steps(1) infinite;
+}
+
+html {
+ scrollbar-color: #A2D2DF #111111; /* Scrollbar color */
 }
