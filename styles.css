@@ -66,7 +66,7 @@ nav .right a:hover {
 
 /* General Section Styles */
 section {
-    padding: 8rem 2rem;
+    padding: 4rem 2rem;
     min-height: 80vh; /* Reduce the default minimum height */
     display: flex;
     flex-direction: column;
