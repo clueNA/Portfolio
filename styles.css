@@ -395,6 +395,7 @@ footer p {
 }
 
 #leave-message-section input[type="text"],
+#leave-message-section input[type="email"],
 #leave-message-section textarea {
     width: 100%;
     padding: 0.75rem;
