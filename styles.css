@@ -408,7 +408,7 @@ footer p {
     resize: vertical; /* Allow vertical resizing for the textarea */
 }
 
-#leave-message-section input[type="submit"] {
+#leave-message-section button[type="submit"] {
     padding: 0.75rem 1.5rem;
     font-size: 1.25rem;
     font-weight: 600;
@@ -421,7 +421,7 @@ footer p {
     align-self: center; /* Center the submit button */
 }
 
-#leave-message-section input[type="submit"]:hover {
+#leave-message-section button[type="submit"]:hover {
     background-color: rgb(84, 128, 141);
 }
 
