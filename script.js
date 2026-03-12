@@ -21,4 +21,11 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     type();
+
+    // Project / Certification list expand-collapse
+    document.querySelectorAll('.project-list-header').forEach(function(header) {
+        header.addEventListener('click', function() {
+            this.parentElement.classList.toggle('expanded');
+        });
+    });
 }); 
